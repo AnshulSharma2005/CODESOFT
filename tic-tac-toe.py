@@ -24,7 +24,7 @@ def checkWin(xState, zState):
             print("X Won the match")
             return 1
         if(sum(zState[win[0]], zState[win[1]], zState[win[2]]) == 3):
-            print("O Won the match")
+            print("Y Won the match")
             return 0
     return -1
     
@@ -40,7 +40,7 @@ if __name__ == "__main__":
             value = int(input("Please enter a value: "))
             xState[value] = 1
         else:
-            print("O's Chance")
+            print("Y's Chance")
             value = int(input("Please enter a value: "))
             zState[value] = 1
         cwin = checkWin(xState, zState)
